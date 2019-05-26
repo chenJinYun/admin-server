@@ -9,7 +9,8 @@ node{
     }
 
     withEnv([
-        'SERVICE=admin-server'
+        'SERVICE=admin-server',
+        'PROFILES=dev'
     ]){
         stage('Build') {
             sh './build.sh'
