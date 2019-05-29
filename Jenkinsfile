@@ -1,7 +1,6 @@
 node{
     stage('Checkout') {
-        git url: 'https://github.com/tw-cloud-native/admin-server.git',
-            branch: 'master'
+        checkout scm
     }
 
     stage('Test') {
